@@ -5,42 +5,52 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Money Saver</title>
+    <!-- css add --------------- -->
     <link rel="stylesheet" href="style.css">
+    <!-- google font---------------- -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
+
 </head>
 
 <body>
     <main>
-        <h1>Money Calculaton</h1>
+        <h1>Money <label>Calculaton !!</label> </h1>
         <div class="conatainer">
 
+            <!-- img div-------------- -->
             <div class="pic">
                 <img src="./photo-1580519542036-c47de6196ba5.jfif" alt="">
             </div>
+
+            <!-- form div---- -->
             <div class="form-text">
                 <form action="">
                     <h1>Income</h1>
-                    <span>Income:</span> <input type="text">
+                    <span>Income:</span> <input id="Income" type="text">
                     <div class="expenses">
                         <h1>Expenses</h1>
-                        <span>Food:</span> <input type="text"><br>
-                        <span>Rent:</span> <input type="text"><br>
-                        <span>Clothes:</span> <input type="text">
+                        <span>Food:</span> <input id="Food" type="text"><br>
+                        <span>Rent:</span> <input id="Rent" type="text"><br>
+                        <span>Clothes:</span> <input id="Clothes" type="text">
                     </div>
-                    <button>Calculate</button> <br>
-                    <h2>Total Expense:</h2>
-                    <h2>Balance:</h2>
-                    <span>Save</span> <input type="text" id="pin" name="pin" maxlength="4" size="4"> <span>%</span>
-                    <button>Save</button> <br>
-                    <h2>Saving Amount: 2000</h2>
-                    <h2>Remaining Balance: 2500</h2>
+
+                    <button href="#" id="Calculate-btn">Calculate</button> <br>
+                    <h2 id="Total Expense">Total Expense:</h2>
+                    <h2 id="Balance">Balance:</h2>
+                    <span>Save</span> <input type="text" id="save-input" name="pin" maxlength="4" size="4">
+                    <span>%</span>
+                    <button id="save-btn">Save</button> <br>
+                    <h2 id="Saving-Amount">Saving Amount:00</h2>
+                    <h2 id="Remaining-Balance">Remaining Balance:00</h2>
                 </form>
             </div>
 
         </div>
 
     </main>
+
+    <script src="./index.js"></script>
 </body>
 
 </html>

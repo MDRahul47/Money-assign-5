@@ -1,5 +1,7 @@
+
+/*---------------- button and hover--------------- */
 button{
-    background-color: rgba(35, 101, 224, 0.815);
+    background-color: red;
     padding: 3px 18px;
     color: white;
     font-weight: 700;
@@ -10,30 +12,40 @@ button{
     margin-bottom: 15px;
     transition: all 0.3s linear;
 }
-
 button:hover{
     color: black;
-    background-color: rgb(79, 233, 233);
+    background-color: rgba(255, 0, 0, 0.418);
 }
 
+/* ------------top title Money Calculaton-------------- */
 h1{
     text-align: center;
     font-size: 35px;
     font-weight: 700;
     font-family: 'Lato', sans-serif;
 }
+
+label{
+    color:red ;
+}
+/*----------------------- img size -------------------- */
 img{
     Width: 705px;
     Height: 759px;
+    border-radius: 5px;
 }
 
+/* -------------------form size --------------------- */
 .form-text{
     background: #d7d9da4d;
     text-align: center;
     Height: 759px;
     width: auto;
-
+    border-radius: 5px;
+    
 }
+
+/*--------- main div -------------------------- */
 .conatainer{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -47,6 +59,8 @@ img{
 span{
     font-weight: 700;
     font-size: 19px;
+    display: inline-block;
+    width: 100px;
 }
 
 input{
