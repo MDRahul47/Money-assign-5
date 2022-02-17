@@ -12,14 +12,20 @@ let BTNsave = document.getElementById("save-btn");
 let SavingAmount = document.getElementById("Saving-Amount");
 let RemainingBalance = document.getElementById("Remaining-Balance");
 
+
 // --------------food rent clothes sum here---------------
 BTNcalculate.addEventListener('click', calculateHandler)
 function calculateHandler() {
+    let mainIncome = parseInt(income.value);
     let costFood = parseInt(Food.value);
     let constRent = parseInt(Rent.value);
     let constColthes = parseInt(Clothes.value);
-    let totalCost = costFood + constRent + constColthes;
-    TotalExpense.innerText = totalCost;
+    let TotalConst = costFood + constRent + constColthes;
+    TotalExpense.innerText = TotalConst;
+
+    let newBalance = mainIncome - TotalConst;
+    Balance.innerText = newBalance;
+    return newBalance;
 
 }
 
