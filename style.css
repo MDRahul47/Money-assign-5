@@ -1,0 +1,77 @@
+button{
+    background-color: rgba(35, 101, 224, 0.815);
+    padding: 3px 18px;
+    color: white;
+    font-weight: 700;
+    font-size: 25px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    transition: all 0.3s linear;
+}
+
+button:hover{
+    color: black;
+    background-color: rgb(79, 233, 233);
+}
+
+h1{
+    text-align: center;
+    font-size: 35px;
+    font-weight: 700;
+    font-family: 'Lato', sans-serif;
+}
+img{
+    Width: 705px;
+    Height: 759px;
+}
+
+.form-text{
+    background: #d7d9da4d;
+    text-align: center;
+    Height: 759px;
+    width: auto;
+
+}
+.conatainer{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 50px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    font-family: 'Lato', sans-serif;
+    overflow-x: hidden;
+}
+
+span{
+    font-weight: 700;
+    font-size: 19px;
+}
+
+input{
+    padding: 7px;
+    border: none;
+    margin: 10px 0;
+    background-color: rgba(167, 162, 162, 0.555);
+}
+
+/* resonsive--------- */
+@media only screen and (max-width: 600px) {
+   .conatainer{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 30px;
+   }
+   img{
+    Width: auto;
+    Height: 350px;
+}
+h1{
+    text-align: center;
+}
+.form-text{
+    Height: 800px;
+    width: 400px;
+}
+ }
